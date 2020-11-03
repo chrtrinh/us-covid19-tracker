@@ -1,7 +1,6 @@
 .landing__top {
 	display: flex;
 	align-items: center;
-	width: 90%;
 	margin-top: 20px;
 	flex-direction: column;
 }
