@@ -1,0 +1,43 @@
+.prevent {
+	background-color: #507dbc;
+	height: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.prevent__example {
+	margin-right: 20px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	width: 30%;
+}
+
+.prevent__example:nth-child(3) > img {
+	width: 90px;
+}
+
+@media only screen and (max-width: 425px) {
+	.prevent {
+		flex-direction: column;
+		overflow: scroll;
+		height: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.prevent__example {
+		width: 90%;
+		height: 25%;
+		margin-bottom: 10px;
+		border: 1px solid #000;
+		margin-right: 0px;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+}

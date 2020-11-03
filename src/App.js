@@ -1,22 +1,14 @@
 import React from 'react';
 import './App.css';
 import Home from './Home';
+import Navbar from './Navbar';
+import Routes from './routes';
 
 function App() {
 	return (
 		<div className="app">
-			{/* {user ? (
-				<div className="app__container">
-					<Home />
-				</div>
-			) : (
-				<h2>
-					<Login />
-				</h2>
-			)} */}
-			<div className="app__container">
-				<Home />
-			</div>
+			<Navbar />
+			<Routes />
 		</div>
 	);
 }

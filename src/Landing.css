@@ -1,0 +1,40 @@
+.landing__top {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+	flex-direction: column;
+}
+
+.landing {
+	background-color: #a1c6ea;
+	height: 100vh;
+}
+
+.landing > h4 {
+	padding-top: 20px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: larger;
+}
+
+.landing__top > img {
+	width: 65%;
+	height: 70%;
+}
+
+@media only screen and (max-width: 425px) {
+	.landing__top > .topBar__mobile {
+		width: 90%;
+		flex-direction: column;
+	}
+
+	.landing__top > .topBar__mobile > .MuiPaper-root {
+		width: 90%;
+		margin-bottom: 10px;
+	}
+
+	.landing__top > .topBar__mobile > .MuiPaper-root > h4:nth-child(1) {
+		font-size: 8vw;
+	}
+}
