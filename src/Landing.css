@@ -24,6 +24,10 @@
 }
 
 @media only screen and (max-width: 425px) {
+	.landing {
+		height: 100%;
+	}
+
 	.landing__top > .topBar__mobile {
 		width: 90%;
 		flex-direction: column;
