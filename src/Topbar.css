@@ -1,0 +1,57 @@
+.topBar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+}
+
+.topBar > .MuiPaper-root > h4:nth-child(1) {
+	font-size: min(4vw, 65px);
+}
+
+.topBar > .MuiPaper-root {
+	width: 30%;
+	margin-right: 10px;
+	height: 10em;
+	border: 1px solid lightgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.topBar__mobile {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+	.topBar__mobile {
+		display: flex;
+	}
+
+	.topBar__mobile > .MuiPaper-root {
+		width: 30%;
+		margin-right: 10px;
+		height: 10em;
+		border: 1px solid lightgray;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.topBar__mobile > .MuiPaper-root > h4:nth-child(1) {
+		font-size: 5vw;
+	}
+
+	.topBar {
+		display: none;
+	}
+}

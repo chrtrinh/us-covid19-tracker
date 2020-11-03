@@ -1,0 +1,64 @@
+.mapCharts {
+	outline-width: 0;
+	width: 80%;
+}
+
+.mapCharts__container {
+	border: 1px solid lightgray;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mapCharts > svg > g > path {
+	outline-width: 0;
+}
+
+@media only screen and (max-width: 1240px) {
+	.mapCharts__container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+		border: 1px solid #000;
+	}
+
+	.mapCharts {
+		width: 60%;
+		min-height: 25vh;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.mapCharts__container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+		border: 1px solid #000;
+	}
+
+	.mapCharts {
+		width: 80%;
+		min-height: 25vh;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.mapCharts__container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 40vh;
+		border: 1px solid #000;
+		display: none;
+	}
+
+	.mapCharts {
+		display: none;
+	}
+}

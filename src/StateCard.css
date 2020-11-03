@@ -1,0 +1,93 @@
+.stateCard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: #507dbc;
+}
+
+.stateCard > .MuiPaper-root {
+	width: 100%;
+	margin: 10px;
+	margin-top: 10px;
+	padding: 10px;
+	display: flex;
+}
+
+.stateCard__left {
+	flex: 0.5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.stateCard__right {
+	display: flex;
+	flex: 0.5;
+	border: 1px solid black;
+	box-shadow: 1px 2px lightgray;
+	border-radius: 4px;
+	padding: 10px;
+	font-size: larger;
+}
+
+.stateCard__right > h4 {
+	margin-right: 10px;
+	border: 1px solid #000;
+	width: 100%;
+}
+
+.stateCard__active {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-right: 10px;
+	border-right: 1px solid lightgray;
+
+	padding-right: 10px;
+}
+
+.stateCard__active > h4 {
+	flex: 0.8;
+}
+
+.stateCard__active > span {
+	flex: 0.2;
+}
+
+.stateCard__deaths {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.stateCard__deaths > h4 {
+	flex: 0.8;
+}
+
+.stateCard__deaths > span {
+	color: red;
+	flex: 0.2;
+	text-align: right;
+}
+
+@media only screen and (max-width: 1440px) {
+	.stateCard__right {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.stateCard > .MuiPaper-root {
+		flex-direction: column;
+	}
+
+	.stateCard > .MuiPaper-root {
+		flex-direction: column;
+	}
+
+	.stateCard__left {
+		padding-bottom: 10px;
+	}
+}

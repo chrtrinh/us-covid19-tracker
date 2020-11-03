@@ -1,0 +1,34 @@
+.home {
+	display: flex;
+	height: 100%;
+}
+
+.home__container {
+	border: 1px solid #000;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.home__top {
+	flex: 0.5;
+	min-height: 25vh;
+	border: 1px solid lightgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #a1c6ea;
+}
+
+.home__bottom {
+	height: 75vh;
+	display: flex;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 1240px) {
+	.home__bottom {
+		flex-direction: column-reverse;
+	}
+}
